@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Monthsary, Angel 💜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating hearts background -->
+    <div class="hearts-container"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Happy Monthsary?</h1>
+            <p class="hero-subtitle">Everything here comes from my heart.</p>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards Grid -->
+    <section class="cards-container">
+        <div class="card" onclick="openModal('modal1')">
+            <div class="card-content">
+                <span class="card-icon">💜</span>
+                <h2>Reason I Can't Give My Letter</h2>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('modal2')">
+            <div class="card-content">
+                <span class="card-icon">💌</span>
+                <h2>Virtual Letter</h2>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('modal3')">
+            <div class="card-content">
+                <span class="card-icon">📝</span>
+                <h2>Handwritten Letter</h2>
+            </div>
+        </div>
+
+        <div class="card" onclick="openModal('modal4')">
+            <div class="card-content">
+                <span class="card-icon">🍫</span>
+                <h2>For Your Snack</h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal 1: Reason I Can't Give My Letter -->
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal1')">&times;</button>
+            <h2>Reason I Can't Give My Letter</h2>
+           
+            <div class="note-section">
+                <h3>A Personal Note</h3>
+                <p contenteditable="true" class="editable-note">hindi ko maibibigay letter ko this time kasi malaks ang ulan dito tas biglang nilagnat si papa at mama</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2: Virtual Letter -->
+    <div id="modal2" class="modal">
+        <div class="modal-content modal-letter">
+            <button class="close-btn" onclick="closeModal('modal2')">&times;</button>
+            <div class="letter-paper">
+                <h2>My Love Letter</h2>
+                <div class="letter-text" contenteditable="true">
+                   <p>Hi, Angel. Happy monthsary?</p>
+
+<p>It's the 3rd of the month again, haha.</p>
+
+<p>I just want to make things clear about us. Ano nga ba talaga tayo? Nalilito kasi ako. Minsan it feels like tayo ulit, pero may mga times din na parang ang layo ng loob mo sa akin. I know a lot of things have changed, and I understand that. I can't blame you after everything that happened in our relationship before.</p>
+
+<p>Hindi ko lang talaga mapigilan na ma-miss yung dating ikaw. Yung simpleng good mornings and good nights, yung "I love you," yung kumustahan natin, yung updates, at yung sweet side mo. I know people change, and I'm not asking you to become the old version of yourself. Gusto ko lang maintindihan kung nasaan ba talaga tayo ngayon.</p>
+
+<p>Hindi kasi malinaw sa'kin kung ano ba tayo. It bothers me sometimes kapag nakikita ko yung reposts mo, pati yung story mo before. Minsan tungkol sa love, minsan naman parang about being single. You know how bad my overthinking can get. Sometimes, it even makes me feel like I'm competing with someone, especially after I found out before na nagkaroon ka ng crush sa iba.</p>
+
+<p>I know you're busy now, and I understand that. Hindi naman yun ang issue para sa'kin. I just want answers. Hindi ko alam kung valid ba itong nararamdaman ko, pero gusto kong maging honest tungkol dito.</p>
+
+<p>Are you still unsure about me? Do you still love me? Or are you just holding on because nanghihinayang ka sa kung anong meron tayo?</p>
+
+<p>Sorry for bringing up such a deep conversation. You know how important communication is to me.</p>
+
+<p>Please, just be yourself and tell me what you truly feel. I realized before that I was trying so hard to make you love me the way I wanted, thinking it would fix everything. But I was wrong. I don't want to force anything anymore.</p>
+
+<p>So please, be honest with me. If your answer is going to hurt me, then let it. I'd rather know the truth than keep comforting myself with uncertainty.</p>
+
+<p>I hope this message doesn't make you feel attacked, because that's never my intention. I'm not trying to start a fight or make you feel guilty. I just want clarity so I know where I stand in your life.</p>
+
+<p>I love you so much, Angel. And no matter what your answer is, thank you for taking the time to read this.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 3: Handwritten Letter -->
+    <div id="modal3" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal3')">&times;</button>
+            <h2>Handwritten Letter</h2>
+            <div class="image-container" onclick="toggleZoom(this)">
+                <img src="handwritten-letter.jpg" alt="Handwritten Letter" class="modal-image">
+            </div>
+            <p class="image-hint">Click to zoom • Pinch to zoom on mobile</p>
+        </div>
+    </div>
+
+    <!-- Modal 4: For Your Snack -->
+    <div id="modal4" class="modal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal('modal4')">&times;</button>
+            <h2>For Your Snack</h2>
+            <div class="image-container" onclick="toggleZoom(this)">
+                <img src="snack.jpg" alt="Snack" class="modal-image">
+            </div>
+            <div class="note-section">
+                <h3>A Sweet Note</h3>
+                <p contenteditable="true" class="editable-note">mamayang umaga ko pa maibibigay. I know it's not much, but I hope it helps you buy something you've been craving.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
